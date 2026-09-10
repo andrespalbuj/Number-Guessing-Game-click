@@ -2,4 +2,4 @@
 
 1. Implementa el típico juego de adivinar un número entre 1 y 100
 
-[Demo](https://omiras.github.io/Number-Guessing-Game/)
+[Demo](https://femxa.github.io/Number-Guessing-Game-click/)
