@@ -1,30 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Number Guessing Game</title>
+    <title>Juego de adivinar números</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Number guessing game</h1>
-    <p>Try and guess a random number between 1 and 100.</p>
-    <p>You have 10 attempts to guess the right number.</p>
+    <h1>Juego de adivinar números</h1>
+    <p>Intenta adivinar un número aleatorio entre 1 y 100.</p>
+    <p>Tienes 10 intentos para adivinar el número correcto.</p>
     </br>
-    <div id="wrapper">
+    <div id="contenedor" class="wrapper">
         <form class="form">
-            <label for="guessField" id="guess">Guess a number</label>
-            <input type="number" id="guessField" class="guessField" min="1" max="100" required>
-            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+            <label for="campo-adivinanza" id="etiqueta-adivinanza" class="guess-label">Adivina un número</label>
+            <input type="number" id="campo-adivinanza" class="guessField" min="1" max="100" required>
+            <button type="submit" id="enviar-adivinanza" class="guessSubmit">Enviar intento</button>
         </form>
 
         <div class="resultParas">
-            <p>Previous Guesses: <span id="previous-guesses" class="guesses"></span></p>
-            <p>Guesses Remaining: <span id="remaining-guesses" class="lastResult"></span></p>
-            <p id="message" class="lowOrHi"></p>
+            <p>Intentos anteriores: <span id="intentos-anteriores" class="guesses"></span></p>
+            <p>Intentos restantes: <span id="intentos-restantes" class="lastResult"></span></p>
+            <p id="mensaje" class="lowOrHi"></p>
         </div>
     </div>
     <script src="app.js"></script>
